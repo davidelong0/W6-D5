@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edit Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-black text-white">
+    <div class="container mt-4">
+      <!-- Logo Netflix -->
+      <div class="row">
+        <div class="col-12">
+          <img
+            src="/Netflix-assets/assets/netflix_logo.png"
+            alt="Netflix Logo"
+            class="img-fluid"
+            style="width: 100px"
+          />
+        </div>
+      </div>
+
+      <!-- Sezione principale -->
+      <div class="row justify-content-center mt-3">
+        <div class="col-md-8">
+          <h1 class="fw-bold">Edit Profile</h1>
+          <div class="row mt-3">
+            <!-- Immagine profilo -->
+            <div class="col-md-3">
+              <img
+                src="/Netflix-assets/assets/kids_icon.png"
+                alt="Profile Image"
+                class="img-fluid rounded"
+              />
+            </div>
+            <!-- Contenuto a destra -->
+            <div class="col-md-9">
+              <!-- Sezione Nome e Lingua -->
+              <div class="border-bottom pb-3">
+                <input
+                  type="text"
+                  class="form-control bg-dark text-white mb-3"
+                  value="Strive Student"
+                />
+                <label class="fw-bold">Language:</label>
+                <select class="form-select bg-dark text-white w-50">
+                  <option>English</option>
+                  <option>Italian</option>
+                  <option>Spanish</option>
+                </select>
+              </div>
+
+              <!-- Sezione Maturity Settings -->
+              <div class="border-bottom py-3">
+                <p class="fw-bold">Maturity Settings:</p>
+                <button class="btn btn-secondary mb-3">ALL MATURITY RATINGS</button>
+                <p>
+                  Show titles of <strong>all maturity ratings</strong> for this
+                  profile.
+                </p>
+                <button class="btn btn-outline-light">EDIT</button>
+              </div>
+
+              <!-- Sezione Autoplay -->
+              <div class="py-3">
+                <p class="fw-bold">Autoplay controls</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input bg-dark border-light"
+                    type="checkbox"
+                    checked
+                  />
+                  <label class="form-check-label"
+                    >Autoplay next episode in a series on all devices.</label
+                  >
+                </div>
+                <div class="form-check border-bottom border-light py-3">
+                  <input
+                    class="form-check-input bg-dark border-light"
+                    type="checkbox"
+                    checked
+                  />
+                  <label class="form-check-label"
+                    >Autoplay previews while browsing on all devices.</label
+                  >
+                </div>
+                <!-- Pulsanti finali -->
+                <div class="row mt-4">
+                    <div class="col-3">
+                        <button class="btn btn-light w-100 fw-bold py-1">SAVE</button>
+                    </div>
+                    <div class="col-3">
+                        <button class="btn btn-secondary w-100 py-1">CANCEL</button>
+                    </div>
+                    <div class="col-6">
+                        <button class="btn btn-outline-light w-100 py-1">DELETE PROFILE</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
